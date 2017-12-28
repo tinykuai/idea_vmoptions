@@ -1,4 +1,7 @@
 # custom IntelliJ IDEA VM options
+# refs
+# http://blog.oneapm.com/apm-tech/426.html
+# http://www.zhaiqianfeng.com/2017/05/intellij-idea-optimization.html
 
 -Xms1024m
 -Xmx2048m
