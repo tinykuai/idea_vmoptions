@@ -2,16 +2,23 @@
 # refs
 # http://blog.oneapm.com/apm-tech/426.html
 # http://www.zhaiqianfeng.com/2017/05/intellij-idea-optimization.html
+# https://segmentfault.com/a/1190000010144588
 
+# custom IntelliJ IDEA VM options
+
+-server
 -Xms1024m
--Xmx2048m
+-Xmx4g
 -XX:ReservedCodeCacheSize=1024m
--XX:+UseConcMarkSweepGC
--XX:SoftRefLRUPolicyMSPerMB=50
+-XX:+UseG1GC
+# -XX:+UseConcMarkSweepGC
+-XX:SoftRefLRUPolicyMSPerMB=0
+-XX:MaxMetaspaceSize=512m
 -ea
 -Dsun.io.useCanonCaches=false
 -Djava.net.preferIPv4Stack=true
 -XX:+HeapDumpOnOutOfMemoryError
 -XX:-OmitStackTraceInFastThrow
 -Xverify:none
+-XX:+DisableAttachMechanism
 
